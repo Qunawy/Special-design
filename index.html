@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="imgs/Icon_02.icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Design</title>
+  <!-- css files -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap"     rel="stylesheet">
+</head>
+<body>
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between position-absolute w-100">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#">Special Design</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">`
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#timeline">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- end navbar -->
+
+    <!-- start setting -->
+    <section class="setting-box position-fixed d-flex  vh-100 bg-white">
+      <div class=" toggle-setting bg-white px-1 position-absolute ">
+        <i class="fa-solid fa-gear icon"></i>
+      </div>
+      <div class=" setting-container text-center m-2">
+        <div class="setting setting-color">
+        <h4 class="text-secondary setting-title">Colors</h4>
+        <ul class="color-list d-flex  justify-content-center ">
+          <li data-color="#FF9800" class="rounded-circle  mx-1 main active" ></li>
+          <li data-color="#E91E63" class="rounded-circle  mx-1" ></li>
+          <li data-color="#009688" class="rounded-circle  mx-1" ></li>
+          <li data-color="#03A9F4" class="rounded-circle mx-1" ></li>
+          <li data-color="#4CAF50" class="rounded-circle  mx-1" ></li>
+        </ul>
+        </div>
+        <div class=" setting  setting-bg-random">
+          <span class="text-secondary d-block">Random Backgrounds</span>
+          <button class="btn btn-color text-white py-0 px-3 my-3 opacity-100 yes-random">yes</button>
+          <button class="btn btn-color text-white py-0 px-3 my-3 no-random">no</button>
+
+        </div>
+        <div class=" setting  show-bullets mt-3">
+          <span class="text-secondary d-block">Show Bullets</span>
+          <button class="btn btn-color text-white py-0 px-3 my-3 opacity-100 yes-bullet">yes</button>
+          <button class="btn btn-color text-white py-0 px-3 my-3 no-bullet">no</button>
+
+        </div>
+        <button class="btn text-white bg-danger w-100 mt-3 btn-reset"> Reset Options</button>
+      </div>  
+    </section>
+    <!-- end setting -->
+    <!-- start nav-bullets -->
+  <section class="nav-bullets position-fixed text-center">
+    <div class="bullets rounded-circle position-relative my-4 mx-auto" data-section="about">
+      <div class="bullet position-absolute text-white py-1 px-2">
+        About Us
+      </div>
+    </div>
+    <div class="bullets rounded-circle position-relative my-4 mx-auto" data-section="skills">
+      <div class="bullet position-absolute text-white py-1">Our Skills</div>
+    </div>
+    <div class="bullets rounded-circle position-relative my-4 mx-auto" data-section="gallery">
+      <div class="bullet position-absolute text-white p-1 ">
+        Our Gallery
+      </div>
+    </div>
+    <div class="bullets rounded-circle position-relative my-4 mx-auto" data-section="timeline">
+      <div class="bullet position-absolute text-white py-1 px-3">
+        Timeline
+      </div>
+    </div>
+    <div class="bullets rounded-circle position-relative my-4 mx-auto" data-section="features">
+      <div class="bullet position-absolute text-white py-1 px-3">
+        Features
+      </div>
+    </div>
+    <div class="bullets rounded-circle position-relative my-4 mx-auto" data-section="testimonials">
+      <div class="bullet position-absolute text-white py-1 px-3">
+        Testimonials
+      </div>
+    </div>
+  </section>
+    <!-- end nav-bullets -->
+
+  <!-- start home -->
+  <section class="home vh-lg-100 vh-75  position-relative">
+    <div class="overlay">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="home-info  text-center">
+        <h2 class="home-title">We Are <span>Creative</span>  Agency
+        </h2>
+        <p class="home-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- end home -->
+
+  <!-- start about -->
+  <section class="about py-5 bg-white" id="about">
+    <div class="container d-flex flex-column flex-lg-row text-center text-lg-start justify-content-center align-items-center">
+    <div class="about-info ">
+      <h2 class="h2-generale">About Us</h2>
+      <p class="about-info-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis non voluptate id?
+      </p>
+    </div>
+    <div class="about-img w-50 d-flex justify-content-center align-items-center">
+      <img src="imgs/about-us.jpg" alt="">
+    </div>
+  </div>
+  
+  </section>
+  <!-- end about -->
+
+  <!-- start skills -->
+  <section class="skills py-5" id="skills">
+    <h2 class="header-title h2-generale mx-auto pb-3">Our Skills</h2>
+    <div class="container">
+      <div class="prog">
+        <div class="progress-info bg-white p-3 my-2 d-flex">
+          <span class="progress-info-desc col-lg-1 col-3">HTML</span>
+          <div class="position-relative col-lg-10 col-9 rounded progress-info-div">
+            <span class="position-absolute progress-info-span  w-75 rounded-start"></span>
+          </div>
+        </div>
+        <div class="progress-info bg-white p-3 my-2 d-flex">
+          <span class="progress-info-desc col-lg-1 col-3">CSS</span>
+          <div class="position-relative col-lg-10 col-9 rounded progress-info-div">
+          <span class="position-absolute  progress-info-span w-75 rounded-start"></span></div>
+        </div>
+        <div class="progress-info bg-white p-3 my-2 d-flex">
+          <span class="progress-info-desc col-lg-1 col-3">JS</span>
+          <div class="position-relative col-lg-10 col-9 rounded progress-info-div">
+          <span class="position-absolute  progress-info-span w-50 rounded-start"></span></div>
+        </div>
+        <div class="progress-info bg-white p-3 my-2 d-flex">
+          <span class="progress-info-desc col-lg-1 col-3">Python</span>
+          <div class="position-relative col-lg-10 col-9 rounded progress-info-div">
+          <span class="position-absolute  progress-info-span w-25 rounded-start"></span></div>
+        </div>
+        <div class="progress-info bg-white p-3 my-2 d-flex">
+          <span class="progress-info-desc col-lg-1 col-3">Bootstrap</span>
+          <div class="position-relative col-lg-10 col-9  rounded progress-info-div">
+          <span class="position-absolute  progress-info-span w-50 rounded-start"></span></div>
+        </div>
+        <div class="progress-info bg-white p-3 my-2 d-flex">
+          <span class="progress-info-desc col-lg-1 col-3">Jquery</span>
+          <div class="position-relative col-lg-10 col-9 rounded progress-info-div">
+          <span class="position-absolute  progress-info-span w-75 rounded-start"></span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end skills -->
+
+  <!-- start gallery -->
+  <section class="gallery py-5 bg-white" id="gallery">
+    <h2 class="header-title h2-generale mx-auto pb-3" >Our Gallery</h2>
+    <div class="container">
+      <div class="gallery-container row justify-content-center">
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/01.jpg" alt="Image one" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/02.jpg" alt="Image Two" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/03.jpg" alt="Image Three" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/04.jpg" alt="Image Four" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2  border border-1">
+          <img src="imgs/05.jpg" alt="Image Five" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/06.png" alt="Image Sex" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/07.jpg" alt="Image Seven" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/08.jpg" alt="Image eight" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/09.jpg" alt="Image nine" class="mw-100">
+        </div>
+        <div class="gallery-img p-1 col-lg-2 col-md-3 col-8 m-2 border border-1">
+          <img src="imgs/10.jpg" alt="Image ten" class="mw-100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- start show-gallery  -->
+  <section class="show-gallery position-fixed w-100 vh-100  d-flex justify-content-center align-items-center d-none">
+    <div class="show-gallery-div bg-white p-4 w-50 min-h-25 mh-75 position-relative">
+      <span class="show-gallery-span fs-3 text-white  rounded-circle px-3 position-absolute  badge  ">x</span>
+      <span class="show-alt text-center  d-block py-2"></span>
+      <img src="" alt="" class="w-100 h-90"> 
+    </div>
+  </section>
+  <!-- end show-gallery  -->
+  <!-- end gallery -->
+
+  <!-- start timeline -->
+  <section class="timeline py-5" id="timeline">
+    <div class="container">
+      <div class="timeline-content position-relative h-100 row-lg-1">
+        <div class="year text-white rounded p-1 ">2018</div>
+          <div class="left  my-2 float-md-start position-relative">
+            <div class="content bg-white  p-3 position-relative ">
+              <h3 class="content-title">Testing Heading</h3>
+              <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right my-2 float-md-end position-relative">            
+          <div class="content bg-white  p-3 position-relative">
+            <h3 class="content-title">Testing Heading</h3>
+            <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+            </p>
+        </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year text-white rounded p-1 ">2016</div>
+
+          <div class="left my-2 float-md-start position-relative">
+            <div class="content bg-white  p-3 position-relative">
+            <h3 class="content-title">Testing Heading</h3>
+            <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+            </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left my-2 float-md-start position-relative">            
+            <div class="content bg-white  p-3 position-relative">
+              <h3 class="content-title">Testing Heading</h3>
+              <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+            </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </section>
+  <!-- end timeline -->
+  <!-- strat features-->
+  <section class="features bg-white py-5" id="features">
+    <h2 class="header-title h2-generale mx-auto pb-3" >Our Features</h2>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-4 col-md-6 col-12    mt-4">
+          <img src="imgs/programming.svg" alt="" class=" w-25 d-block m-auto">
+          <h3 class="my-2 text-center feat-h3 position-relative" >Development</h3>
+          <p class=" text-center mt-4 text-secondary">We are professional marketeers, we will do anything you imagine in no time.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12    mt-4">
+          <img src="imgs/advertising.svg" alt="" class=" w-25 d-block m-auto">
+          <h3 class="my-2 text-center feat-h3 position-relative" >Marketing</h3>
+          <p class=" text-center mt-4 text-secondary">We are professional marketeers, we will do anything you imagine in no time.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12    mt-4">
+          <img src="imgs/hosting-icon.svg" alt="" class=" w-25 d-block m-auto">
+          <h3 class="my-2 text-center feat-h3 position-relative" >Hosting</h3>
+          <p class=" text-center mt-4 text-secondary">We are professional marketeers, we will do anything you imagine in no time.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12    mt-4">
+          <img src="imgs/mobile-app.svg" alt="" class=" w-25 d-block m-auto">
+          <h3 class="my-2 text-center feat-h3 position-relative" >Mobile Develope</h3>
+          <p class=" text-center mt-4 text-secondary">We are professional marketeers, we will do anything you imagine in no time.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12    mt-4">
+          <img src="imgs/graphic-design.svg" alt="" class=" w-25 d-block m-auto">
+          <h3 class="my-2 text-center feat-h3 position-relative" >Cloud and Servers</h3>
+          <p class=" text-center mt-4 text-secondary">We are professional marketeers, we will do anything you imagine in no time.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-5 col-12    mt-4">
+          <img src="imgs/web-design.svg" alt="" class=" w-25 d-block m-auto">
+          <h3 class="my-2 text-center feat-h3 position-relative" >Seo</h3>
+          <p class=" text-center mt-4 text-secondary">We are professional marketeers, we will do anything you imagine in no time.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end features-->
+  <!-- start testimonials -->
+  <section class="testimonials position-relative py-5" id="testimonials">
+    <div class="container">
+      <h2 class=" fw-bold mx-auto pb-3 text-white" >Testimonials</h2>
+      <div class="row flex-lg-nowrap justify-content-center">
+        <div class="box col-lg-4 col-md-5 col-12 bg-white p-4 m-3 ms-0">
+          <p class="fst-italic text-secondary mb-3">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.
+          </p>
+          <div class="test-content row align-items-center">
+          <img src="http://via.placeholder.com/80/DDD" alt="" class=" rounded-circle col-4">
+          <div class="test-info col-8 ">
+            <h6 class="fw-bold">Dev Qunawy</h6>
+            <p class="text-secondary">CEO At Company</p>
+          </div>
+          </div>
+        </div>
+        <div class="box col-lg-4 col-md-5 col-12 bg-white p-4 m-3 ms-0">
+          <p class="fst-italic text-secondary mb-3">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.
+          </p>
+          <div class="test-content row align-items-center">
+          <img src="http://via.placeholder.com/80/DDD" alt="" class=" rounded-circle col-4">
+          <div class="test-info col-8 ">
+            <h6 class="fw-bold">Mahmoud Azouz</h6>
+            <p class="text-secondary">CEO At Company</p>
+          </div>
+          </div>
+        </div>
+        <div class="box col-lg-4 col-md-5 col-12 bg-white p-4 m-3 ms-0 ">
+          <p class="fst-italic text-secondary mb-3">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.
+          </p>
+          <div class="test-content row align-items-center">
+          <img src="http://via.placeholder.com/80/DDD" alt="" class=" rounded-circle col-4">
+          <div class="test-info col-8 ">
+            <h6 class="fw-bold">Ahmed Mosaad</h6>
+            <p class="text-secondary">CEO At Company</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end testimonials -->
+  <!-- start contact -->
+  <section class="contact py-5">
+    <h2 class="header-title h2-generale mx-auto pb-3 " >Contact Us</h2>
+    <div class="container">
+      <form action="" class=" row justify-content-center">
+        <div class="left col-lg-5 col-md-6  col-12">
+          <input type="text" placeholder="Your Name" name="username" class="">
+          <input type="text" placeholder="Your Email" name="eamil">
+          <input type="text" placeholder="Your Phone" name="phone">
+          <input type="text" placeholder="Subject" name="subject">
+        </div>
+        <div class="right col-lg-5 col-md-6 col-12" >
+          <textarea name="" placeholder="Yor Message" ></textarea>
+          <input type="submit" value="send">
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- end contact -->
+  <!-- start footer -->
+  <footer class="w-100 bg-dark py-3">
+    <p class="text-white m-0 text-center">Created With By Osama Elzero , Work Dev Ahmed Qunawy</p>
+
+    
+  </footer>
+  <!-- end footer -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery-3.6.4.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
