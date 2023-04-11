@@ -4,16 +4,6 @@
 
 
 
-// select landing page
-// Get Array of Imgs
-let urls_obj = [
-  "02",
-  "03",
-  "04",
-  "05",
-  "01"
-]
-// Get random number
 
 // open or close on setting
 $(".toggle-setting ").click(function()  {
@@ -24,7 +14,7 @@ $(".toggle-setting ").click(function()  {
 // active class in button
 $(".setting .btn-color").click(function(){
   $(this).addClass(" opacity-100").siblings().removeClass("opacity-100  ")
-
+  
 })
 // change color
 
@@ -44,13 +34,22 @@ let mainColors = localStorage.getItem("color")
 let color= $(".color-list ").children() ;
 for (let x = 0; x < color.length; x++) {
   if(mainColors == color[x].getAttribute("data-color")){
-  let loopColor = color[x];
+    let loopColor = color[x];
     $(loopColor).addClass("active").siblings().removeClass("active")
   }
 }
 if( mainColors !== null){
   document.documentElement.style.setProperty('--main-color', mainColors)
 }
+// select landing page
+// Get Array of Imgs
+let urls_obj = [
+  "02",
+  "03",
+  "04",
+  "05",
+  "01"
+]
 
 // random background
 let backgroundInterval;
@@ -61,7 +60,7 @@ let x = 0 ;
 
     backgroundInterval= setInterval( ()=> {
 
-      $(".home").css("background-image",`url(../imgs/${urls_obj[x]}.jpg)`)
+      $(".home").css("background-image",`url(./imgs/${urls_obj[x]}.jpg)`)
   
       x++
       if( x==4){
